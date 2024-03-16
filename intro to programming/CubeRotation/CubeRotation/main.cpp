@@ -1,0 +1,89 @@
+#include <iostream>
+#include <cmath>
+#include <cstring>
+#include <thread>
+#include <chrono>
+
+float A, B, C;
+
+float cubeWidth = 20;
+int width = 160, height = 44;
+float zBuffer[160 * 44];
+char buffer[160 * 44];
+int backgroundASCIICode = '.';
+int distanceFromCam = 100;
+float horizontalOffset;
+float K1 = 40;
+
+float incrementSpeed = 0.6;
+
+float x, y, z;
+float ooz; //Розрахунок зворотної глибини для точки в 3D просторі
+int xp, yp; // Визначає, де на екрані буде розташована точка по горизонталі після проекції з 3D простору
+int idx;     // обчислює індекс в одновимірному буфері, який використовується для збереження інформації про кожен піксель на екрані
+
+float calculateX(int i, int j, int k) {
+    return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) +
+        j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
+}
+
+float calculateY(int i, int j, int k) {
+    return j * cos(A) * cos(C) + k * sin(A) * cos(C) -
+        j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
+        i * cos(B) * sin(C);
+}
+
+float calculateZ(int i, int j, int k) {
+    return k * cos(A) * cos(B) - j * sin(A) * cos(B) + i * sin(B);
+}
+
+void calculateForSurface(float cubeX, float cubeY, float cubeZ, int ch) {
+    x = calculateX(cubeX, cubeY, cubeZ);
+    y = calculateY(cubeX, cubeY, cubeZ);
+    z = calculateZ(cubeX, cubeY, cubeZ) + distanceFromCam;
+
+    ooz = 1 / z;
+
+    xp = static_cast<int>(width / 2 + horizontalOffset + K1 * ooz * x * 2);
+    yp = static_cast<int>(height / 2 + K1 * ooz * y);
+
+    idx = xp + yp * width;
+    if (idx >= 0 && idx < width * height) {
+        if (ooz > zBuffer[idx]) {
+            zBuffer[idx] = ooz;
+            buffer[idx] = ch;
+        }
+    }
+}
+
+int main() {
+    std::cout << "\x1b[2J";
+    while (1) {
+        std::memset(buffer, backgroundASCIICode, width * height);
+        std::memset(zBuffer, 0, width * height * sizeof(float));
+        cubeWidth = 20;
+        horizontalOffset = -2 * cubeWidth;
+        // first cube
+        for (float cubeX = -cubeWidth; cubeX < cubeWidth; cubeX += incrementSpeed) {
+            for (float cubeY = -cubeWidth; cubeY < cubeWidth; cubeY += incrementSpeed) {
+                calculateForSurface(cubeX, cubeY, -cubeWidth, '@');
+                calculateForSurface(cubeWidth, cubeY, cubeX, '$');
+                calculateForSurface(-cubeWidth, cubeY, -cubeX, '~');
+                calculateForSurface(-cubeX, cubeY, cubeWidth, '#');
+                calculateForSurface(cubeX, -cubeWidth, -cubeY, ';');
+                calculateForSurface(cubeX, cubeWidth, cubeY, '+');
+            }
+        }
+
+        std::cout << "\x1b[H";
+        for (int k = 0; k < width * height; k++) {
+            std::putchar(k % width ? buffer[k] : 10);
+        }
+
+        A += 0.05;
+        B += 0.05;
+        C += 0.01;
+        std::this_thread::sleep_for(std::chrono::microseconds(8000 * 2));
+    }
+    return 0;
+}

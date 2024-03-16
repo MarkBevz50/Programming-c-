@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  Polinomial.cpp
+D:\c++\Polinom\PolyTools\Polinomial.cpp(136,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\c++\Polinom\PolyTools\Polinomial.cpp(233,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  PolyTools.cpp
+  Generating Code...
+  PolyTools.vcxproj -> D:\c++\Polinom\x64\Debug\PolyTools.lib

@@ -1,0 +1,15 @@
+﻿  main.cpp
+D:\c++\CubeRotation\CubeRotation\main.cpp(18,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\c++\CubeRotation\CubeRotation\main.cpp(41,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(41,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(41,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(42,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(42,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(42,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(43,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(43,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(43,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\c++\CubeRotation\CubeRotation\main.cpp(83,18): warning C4305: '+=': truncation from 'double' to 'float'
+D:\c++\CubeRotation\CubeRotation\main.cpp(84,18): warning C4305: '+=': truncation from 'double' to 'float'
+D:\c++\CubeRotation\CubeRotation\main.cpp(85,18): warning C4305: '+=': truncation from 'double' to 'float'
+  CubeRotation.vcxproj -> D:\c++\CubeRotation\x64\Debug\CubeRotation.exe
