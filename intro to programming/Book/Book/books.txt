@@ -1,0 +1,24 @@
+23
+Rowling*Harry Potter*2001
+Tolkien*Lord of the Rings*1998
+Martin*A Game of the Thrones*1996
+Orwell*Nineteen Eighty-Four*1949
+King*The Shining*1977
+Hemingway*The Old Man and the Sea*1952
+Austen*Pride and Prejudice*1813
+Fitzgerald*The Great Gatsby*1925
+Collins*The Hunger Games*2008
+Rowling*Harry Potter 2* 2002
+Tolkien*Lord of the Rings 2*1999
+Martin*A Game of Thrones 2*1997
+Orwell*Nineteen Eighty-Four 2*1952
+King* The Shining 2 *1978
+Hemingway* The Old Man and the Sea 2*1952
+Rowling*Harry Potter 3*2003
+Tolkien*Lord of the Rings 3*2000
+Martin*A Game of Thrones 3*1995
+Orwell* Animall farm * 1952
+King*The Shining 3* 1979
+Austen* Pride and Prejudice 2*1820
+Fitzgerald*The Great Gatsby 2*1928
+Collins*The Hunger Games 2*2010
