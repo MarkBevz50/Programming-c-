@@ -1,0 +1,10 @@
+9
+Apple 2.5 2 0
+Peach 2   2 0
+Pear  3   4 40
+Plum  5   7 34
+Orange 3  2  0
+Cherry 6  10 54
+Tangerin 1 1 0
+Apricot 2  1 0
+Durian 5   1 0

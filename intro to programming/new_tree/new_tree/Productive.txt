@@ -1,0 +1,4 @@
+3
+Pear 3 4 40 
+Plum 5 7 34 
+Cherry 6 10 54 

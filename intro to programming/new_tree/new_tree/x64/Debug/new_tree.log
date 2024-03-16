@@ -1,0 +1,7 @@
+﻿  main.cpp
+D:\c++\new_tree\new_tree\main.cpp(12,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\new_tree\new_tree\main.cpp(16,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\new_tree\new_tree\main.cpp(21,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\new_tree\new_tree\main.cpp(32,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\new_tree\new_tree\main.cpp(36,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  new_tree.vcxproj -> D:\c++\new_tree\x64\Debug\new_tree.exe
