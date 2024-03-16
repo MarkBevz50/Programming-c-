@@ -1,0 +1,9 @@
+8
+V Audi 100 2.0
+F Yaroshko 3 150
+V Tesla 120 3.5
+F Tarasyuk 4 200
+V Porshe 150 2.5
+F Bevz 6 180
+V Bentli 90 2.2
+F Yatsiuk 5 210

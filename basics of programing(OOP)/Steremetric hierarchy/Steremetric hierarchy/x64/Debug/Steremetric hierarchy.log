@@ -1,0 +1,4 @@
+﻿Figures.obj : error LNK2019: unresolved external symbol "public: __cdecl Pyramidal::Pyramidal(double)" (??0Pyramidal@@QEAA@N@Z) referenced in function "public: __cdecl Triangular_Pyramid::Triangular_Pyramid(class Triangle const &,double)" (??0Triangular_Pyramid@@QEAA@AEBVTriangle@@N@Z)
+Figures.obj : error LNK2001: unresolved external symbol "public: virtual double __cdecl Triangular_Pyramid::calculate_volume(void)const " (?calculate_volume@Triangular_Pyramid@@UEBANXZ)
+Figures.obj : error LNK2001: unresolved external symbol "public: virtual double __cdecl Triangular_Pyramid::calculate_surface_area(void)const " (?calculate_surface_area@Triangular_Pyramid@@UEBANXZ)
+D:\c++\Steremetric hierarchy\x64\Debug\Steremetric hierarchy.exe : fatal error LNK1120: 3 unresolved externals

@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/c++/steremetric hierarchy/steremetric hierarchy/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "c117ed2a1f7f2106315651c474a5a25af92ff7573877f89fbca289e34278d575"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/steremetric hierarchy/steremetric hierarchy/figures.h"
+          },
+          "hashes": {
+            "sha-256": "4b38d184048d7bdaa4b708474b89a7708c9e8e691125dfaf8afccb91fd2abd91"
+          }
+        }
+      ]
+    }
+  ]
+}
