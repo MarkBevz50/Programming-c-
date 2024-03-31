@@ -1,0 +1,10 @@
+9
+P Maldives TurkishAirlines 1200 1500 5
+C France Toyota 180 9 500
+P Bahamas emirates 1500 1800 6
+P Lviv TurkishAirlines 1200 1100 4
+P Zhitomyr Airbus 1000 700 7
+C Lutsk Audi 210 11 450
+C Berlin T-34 100 40 800
+P Antananarivo Emirates 1300 2100 8
+P New-York Emirates 2200 4000 10
