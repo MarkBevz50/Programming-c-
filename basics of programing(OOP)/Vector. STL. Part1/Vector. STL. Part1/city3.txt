@@ -1,0 +1,5 @@
+Brazil Rio_de_Janeiro 6747815
+India Delhi 16314838
+Australia Melbourne 5078193
+United_States Los_Angeles 3979576
+China Beijing 21542000
